@@ -1,0 +1,129 @@
+* {
+	padding: 0;
+	margin: 0;
+	outline: none;
+	font-family: "Noto Sans", sans-serif;
+	transition: 0.2s;
+	background-size: cover;
+}
+/** Nav bar **/
+nav.bar {
+	backdrop-filter: blur(5px);
+	width: 100vw;
+	max-width: 100%;
+	min-height: 50px;
+	height: 6vh;
+	position: fixed;
+	max-height: 100px;
+	background-color: var(--primary-navbar);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 999;
+}
+nav.group {
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+nav.element#home,
+nav.element#resume {
+	border-radius: 0 0 22px 0;
+}
+nav.element#programming,
+nav.element#contact {
+	border-radius: 0 0 0 22px;
+}
+
+nav.element {
+	color: var(--primary-navbar-color);
+	padding-left: 20px;
+	padding-right: 20px;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	text-overflow: ellipses;
+	/** user select **/
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	font-size: 1em;
+}
+nav.element:hover {
+	color: var(--secondary-navbar-color);
+	backdrop-filter: blur(8px) brightness(0.5);
+	padding-top: 5px;
+	height: calc(100% - 5px);
+	cursor: pointer;
+}
+nav.element:active {
+	color: var(--primary-accent);
+	filter: brightness(1.1);
+	transition: 0.1s;
+}
+nav.element#home {
+	float: right;
+}
+.cover {
+	height: 100vh;
+	width: 100vw;
+	max-width: 100%;
+	background-color: rgb(187, 187, 187); /* Fallback color */
+	background-position: 20% 50%;
+	background-attachment: fixed;
+}
+.header {
+	font-size: 56px;
+	text-align: center;
+	width: auto;
+}
+#hello {
+	color: var(--primary-cover-color);
+	padding-top: 20vh;
+	animation: zoom-in 2s ease-in-out;
+}
+@keyframes zoom-in {
+	from {
+		transform: scale(0.85) translateY(-100px);
+		opacity: 0;
+		filter: blur(2px);
+	}
+}
+
+.sub-header {
+	width: auto;
+	animation: zoom-in 2s ease-in-out;
+	font-size: 24px;
+	color: var(--secondary-cover-color);
+	text-align: center;
+}
+.test {
+	height: 1000px;
+}
+.container {
+	background-color: var(--tertiary-background);
+	padding: 20px;
+	border-radius: 24px;
+	width: 350px;
+	float: right;
+	margin-right: 5vw;
+	backdrop-filter: blur(10px);
+}
+.container-header {
+	color: var(--primary-color);
+	font-size: 24px;
+}
+
+.container-paragraph {
+	text-indent: 20px;
+	color: var(--secondary-color);
+	line-height: 30px;
+}
+.glance {
+	height: 500px;
+	background-image: linear-gradient(transparent, black);
+	z-index: 999;
+}
