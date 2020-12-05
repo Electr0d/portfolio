@@ -89,6 +89,8 @@ a.element#home {
 	height: 100vh;
 	width: 100vw;
 	max-width: 100%;
+	display: flex;
+	justify-content: center;
 	background: rgb(40, 42, 54); /* Fallback color */
 }
 .background {
