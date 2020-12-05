@@ -1,51 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Hamza's Portfolio - Home</title>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="global-assets/css/scheme.css">
-    <link rel="stylesheet" href="index-assets/css/index.css">
-    <link rel="stylesheet" href="global-assets/css/lightTheme.css">
-  </head>
-  <body>
 
-    <!-- Navigation Bar -->
-    <nav class="bar">
-      <nav class="group" id="left">
-        <nav class="element" id="home">Home</nav>
-      </nav>
-      <nav class="group" id="center">
-        <nav class="element" id="programming">Programming</nav>
-      <nav class="element" id="3d-design">3D Design</nav>
-      <nav class="element" id="resume">Resume</nav>
-      </nav>
-      <nav class="group" id="right">
-        <nav class="element" id="contact">Contact Me</nav>
-      </nav>
+<head>
+  <title>Hamza's Portfolio - Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/scrollbar.css">
+  <link rel="stylesheet" href="assets/css/scheme.css">
+  <link rel="stylesheet" href="assets/css/lightTheme.css">
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="bar">
+    <nav class="group" id="left">
     </nav>
+    <nav class="group" id="center">
+      <a class="element" id="programming" href="#glance-programming">Programming</a>
+      <a class="element" id="3d-design" href="#glance-design">3D Design</a>
+      <a class="element" id="contact" href="#contact-me">Contact Me</a>
+    </nav>
+    <nav class="group" id="right">
+    </nav>
+  </nav>
 
-    <!-- Cover -->
-    <div class="cover">
-      <p class="header" id="hello">Hello There!</p>
+  <!-- Cover -->
+  <div class="cover">
+    <video class="background" src="assets/video/intro/intro.mp4" autoplay muted></video>
+    <div class="header-container">
+      <p class="website-header header" id="hello">Hello There!</p>
       <p class="sub-header" id="hello">I'm Hamza Alsarakbi</p>
-      <!-- Small Paragraph about me -->
-      <div class="container" id="me">
-        <p class="container-header">A little about me...</p>
-        <br>
-        <div class="container-paragraph">
-          <p>I am Hamza Alsarakbi. I was born in Damascus Syria, I arrived to Canada in 2017.</p>
-          <p>I design websites, write programs, create 3D designs, and animate.</p>
-          <p>Have a look around my portfolio.</p>
-        </div>
-      </div>
+    </div>
+    <!-- Small Paragraph about me -->
+
+
+    <div class="container" id="me">
+      <p class="container-header">About</p>
+      <div class="container-paragraph">
+        <p>I was born in Damascus, Syria and moved to Canada in 2017.</p>
+        <p>I design websites, write programs, create 3D designs and animate.</p>
+        <p>Have a look around my portfolio. I will update it as I create more things.</p>
       </div>
     </div>
-    <div class="glance">
-      <p class="header">My Work: at a glance</p>
-      <p class="sub-header">Programming</p>
-
+  </div>
+  </div>
+  <div class="glance" id="glance-programming">
+    <div class="header-container">
+      <p class="header">My Work at a Glance: Programming</p>
+      <p class="sub-header">PassVault</p>
     </div>
+    <img class="background" src="assets/img/passvault/background-gradient.png">
+    <video class="foreground" src="assets/video/passvault/passvault.mp4" muted controls></video>
 
+    <div class="logo">
+      <img class="passvault" id="passvault-main" src="assets/img/passvault/icon-backdrop.png">
+      <img class="passvault" id="passvault-cog" src="assets/img/passvault/icon-cog.png">
+    </div>
     
-  </body>
+    
+    <p class="hyperlink">Read more about it <a href="https://www.github.com/Electr0d/PassVault">here</a>!</p>
+  </div>
+  
+  <div class="glance" id="glance-design">
+    <div class="header-container">
+      <p class="header">My Work at a Glance: 3D Design</p>
+    </div>
+    
+    <img class="image" style="margin-top: 150px" src="assets/img/design/cam-1-off.jpg">
+    <img class="image" src="assets/img/design/road-scene.jpg">
+  </div>
+  
+  <div class="contact-me" id="contact-me">
+      <p class="header">Contact Me</p>
+      <a class="resume" href="https://drive.google.com/file/d/1Zd2FI2_fyfNYsBlQFWz6Fup_-EG6n07E/view?usp=sharing">My Resume</a>
+    <div class="socials">
+      <div class="social"><a href="https://www.github.com/Electr0d"><img class="icon" src="assets/img/icons/github.png"></a>GitHub</div>
+      <div class="social"><a href="https://www.linkedin.com/in/hamza-alsarakbi-006586b4/"><img class="icon" src="assets/img/icons/linkedin.png"></a>LinkedIn</div>
+    </div>
+  </div>
+
+
+</body>
+
 </html>
