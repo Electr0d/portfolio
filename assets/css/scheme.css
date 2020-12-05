@@ -93,7 +93,6 @@ a.element#home {
 }
 .background {
 	height: 100vh;
-	width: 100vw;
 	position: relative;
 	z-index: 0;
 }
@@ -115,6 +114,9 @@ a.element#home {
 	text-align: center;
 	width: auto;
 	font-size: 72px;
+}
+#bht {
+	margin-top: 40px;
 }
 .website-header {
 	font-size: 128px;
@@ -235,4 +237,7 @@ a:not(.element):visited {
 	height: 50px;
 	margin: 10px;
 	border-radius: 10px;
+}
+#bob-saggat {
+	width: 200px;
 }
